@@ -3,4 +3,50 @@
     background: lightblue;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.card
+{
+    
+    height:18em;
+  width:16em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  border-radius:16px;
+  overflow:hidden;
+   
+}
+
+.back
+{
+    background-image: url("1.jpg");
+    height:6em;
+  width:16em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  background-size:cover;
+  background-repeat:no-repeat;;
+}
+
+
+.text
+{
+    background-color: #FAFAFC;
+  height:12em;
+  width:16em;
+  position:absolute;
+  bottom:0em;
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
