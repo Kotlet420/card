@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(5,20%);
+    grid-template-areas:
+    "A A B C C"
+    "A A B C C"
+    "A A B C C"
+    "D D D E E"
+    "D D D E E" ;
+}
+.divA{
+    grid-area: A;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+.divB{
+    grid-area: B;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divC{
+    grid-area: C;
+    background-color: orange;
+    position: relative;
+}
+.menuA{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    color: white;
+}
+.elA{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 8%;
+    padding: 5%;
+    background-color: grey;
+    width: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.elB{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 8%;
+    padding: 5%;
+    background-color: grey;
+    width: 25%;
+    text-align: center;
+    font-size: 2rem;
+}
+.menuB{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+    color: white;
+
+}
+.divD{
+    grid-area: D;
+    background-color: pink;
+}
+.divE{
+    grid-area: E;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divF{
+    grid-area: E;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    width: 3rem;
+    text-align: center;
+}
+.wyswietl{
+    display: block;
+    overflow: scroll;
+}
+.schowaj{
+    display: none;
+    overflow: scroll;
+}
+th{
+    background-color: red;
+    color: white;
+}
+td{
+    background-color: coral;
+    color: white;
+}
+@media only screen AND (max-width: 786px){
+    .divA{
+        grid-area: A;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
