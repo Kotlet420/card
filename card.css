@@ -11,27 +11,23 @@
 .card
 {
     
-    height:18em;
+  height:18em;
   width:16em;
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
+  box-orient: vertical;
   flex-direction:column;
   position:relative;
-  border-radius:16px;
+  transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:20px;
   overflow:hidden;
-  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
   box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
    
 }
 
 .back
 {
-    background-image: url("1.jpg");
-    height:6em;
+  background-image: url("1.jpg");
+  height:6em;
   width:16em;
   padding:1em 2em;
   position:Absolute;
@@ -43,7 +39,7 @@
 
 .text
 {
-    background-color: #FAFAFC;
+  background-color: #FAFAFC;
   height:12em;
   width:16em;
   position:absolute;
@@ -61,5 +57,5 @@
 {
   height:18em;
   background-position: center;
-    background-size: cover;
+  background-size: cover;
 }
