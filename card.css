@@ -52,3 +52,14 @@
   text-align:center;
 }
 
+.card:hover .text
+{
+  height:0em;
+  padding:0px 1em;
+}
+.card:hover .back
+{
+  height:18em;
+  background-position: center;
+    background-size: cover;
+}
