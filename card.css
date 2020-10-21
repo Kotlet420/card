@@ -19,6 +19,17 @@
     justify-content: space-around;
 }
 
+h1
+{
+    color: rgb(221, 221, 221);
+}
+
+h1:hover
+{
+   color: black; 
+}
+
+
 h2
 {
     color: silver;
@@ -31,6 +42,11 @@ h3
     color: gold;
     font-family: 'Chancur';
     font-style: cursive;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -48,6 +64,7 @@ h3
   border-radius:20px;
   overflow:hidden;
   box-shadow:  15px 15px 27px #e71919, -15px -15px 27px #e71919;
+  
 }
 
 .back
@@ -59,7 +76,11 @@ h3
   transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   top:0px;
   background-size:cover;
-  background-repeat:no-repeat;;
+  background-position: center;
+  background-repeat:no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -87,6 +108,12 @@ h3
   background-size: cover;
 }
 
+.cos
+{
+    height: 12em;
+    
+}
+
 
 
 /*-----------------------------------------------------------------------*/
@@ -111,7 +138,7 @@ h3
 .back1
 {
   background-image: url("2.jpg");
-  height:18em;
+  height:6em;
   width:16em;
   position:Absolute;
   transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -119,6 +146,9 @@ h3
   background-repeat:no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -126,26 +156,23 @@ h3
 .text1
 {
   background-color: #FAFAFC;
-  height:0em;
+  height:12em;
   width:16em;
   position:absolute;
   transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   bottom:0em;
   padding: 0.5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  text-align:center;
 }
 
 .card1:hover .text1
 {
-  height:18em;
+  height:0em;
   padding:0px 1em;
 }
 .card1:hover .back1
 {
-  height:0em;
+  height:18em;
 }
 
 
@@ -177,7 +204,8 @@ h3
   transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   top:0px;
   background-size:cover;
-  background-repeat:no-repeat;;
+  background-repeat:no-repeat;
+  background-position: center;
 }
 
 
@@ -228,7 +256,7 @@ h3
 .back3
 {
   background-image: url("4.jpg");
-  height:18em;
+  height:6em;
   width:16em;
   position:Absolute;
   transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -243,28 +271,27 @@ h3
 .text3
 {
   background-color: #FAFAFC;
-  height:0em;
+  height:12em;
   width:16em;
   position:absolute;
   transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   bottom:0em;
   padding: 0.5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  text-align:center;
 
 }
 
 .card3:hover .text3
 {
-  height:18em;
+  height:0em;
   padding:0px 1em;
 }
 .card3:hover .back3
 {
-  height:0em;
+  height:18em;
 }
+
+
 
 
 /*-----------------------------------------------------------------------*/
@@ -293,6 +320,13 @@ h3
     background-size: cover;
 }
 
+.card1:hover .link
+{
+    background: url("4.png");
+    background-position: center;
+    background-size: cover;
+}
+
 .card2:hover .link
 {
     background: url("4.png");
@@ -300,33 +334,62 @@ h3
     background-size: cover;
 }
 
-.link1
+.card3:hover .link
+{
+    background: url("4.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+/*-----------------------------------------------------------------------*/
+
+
+.icon
 {
     height: 20px;
     width: 20px;
     width:1em;
     height:1em;
-    background: url("4.png");
+    background: url("6.png");
     background-position: center;
     background-size: cover;
     position:absolute;
     bottom:1em;
-    left:1em;
+    left:2.5em;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 3px;
 }
 
-
-.card1:hover .link1
+.card:hover .icon
 {
-    background: url("5.jpg");
+    background: url("5.png");
     background-position: center;
     background-size: cover;
 }
 
-.card3:hover .link1
+.card1:hover .icon
 {
-    background: url("5.jpg");
+    background: url("5.png");
     background-position: center;
     background-size: cover;
 }
+
+.card2:hover .icon
+{
+    background: url("5.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.card3:hover .icon
+{
+    background: url("5.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
