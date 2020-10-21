@@ -1,3 +1,8 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
 .con
 {
     background: lightblue;
@@ -111,7 +116,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgb(24, 157, 235);
 }
 
 .card1:hover .text1
@@ -122,4 +126,61 @@
 .card1:hover .back1
 {
   height:0em;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+
+.card2
+{
+    
+  height:18em;
+  width:16em;
+  display:flex;
+  box-orient: vertical;
+  flex-direction:column;
+  position:relative;
+  transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:  15px 15px 27px #cacad1, -15px -15px 27px #cacad1;
+   
+}
+
+.back2
+{
+  background-image: url("3.jpg");
+  height:6em;
+  width:16em;
+  position:Absolute;
+  transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  top:0px;
+  background-size:cover;
+  background-repeat:no-repeat;;
+}
+
+
+.text2
+{
+  background-color: #FAFAFC;
+  height:12em;
+  width:16em;
+  position:absolute;
+  transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  bottom:0em;
+  padding: 0.5em;
+  text-align:center;
+}
+
+.card2:hover .text2
+{
+  height:0em;
+  padding:0px 1em;
+}
+.card2:hover .back2
+{
+  height:18em;
+  background-position: center;
+  background-size: cover;
 }
