@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Chancur';
+    src: url('chancur.ttf');
+}
+
 *
 {
     margin: 0;
@@ -14,6 +19,22 @@
     justify-content: space-around;
 }
 
+h2
+{
+    color: silver;
+    font-family: 'Chancur';
+    font-style: cursive;
+}
+
+h3
+{
+    color: gold;
+    font-family: 'Chancur';
+    font-style: cursive;
+}
+
+/*-----------------------------------------------------------------------*/
+
 .card
 {
     
@@ -26,8 +47,7 @@
   transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius:20px;
   overflow:hidden;
-  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-   
+  box-shadow:  15px 15px 27px #e71919, -15px -15px 27px #e71919;
 }
 
 .back
@@ -129,7 +149,7 @@
 }
 
 
-/*-----------------------------------------------------------------------*/
+/*-------------</p>----------------------------------------------------------*/
 
 
 .card2
@@ -183,4 +203,130 @@
   height:18em;
   background-position: center;
   background-size: cover;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+
+.card3
+{
+    
+  height:18em;
+  width:16em;
+  display:flex;
+  box-orient: vertical;
+  flex-direction:column;
+  position:relative;
+  transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:  15px 15px 27px #3b4046, -15px -15px 27px #3b4046;
+   
+}
+
+.back3
+{
+  background-image: url("4.jpg");
+  height:18em;
+  width:16em;
+  position:Absolute;
+  transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  top:0px;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+.text3
+{
+  background-color: #FAFAFC;
+  height:0em;
+  width:16em;
+  position:absolute;
+  transition:all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  bottom:0em;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.card3:hover .text3
+{
+  height:18em;
+  padding:0px 1em;
+}
+.card3:hover .back3
+{
+  height:0em;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+
+.link
+{
+    height: 20px;
+    width: 20px;
+    width:1em;
+    height:1em;
+    background: url("5.jpg");
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    bottom:1em;
+    left:1em;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 3px;
+}
+
+.card:hover .link
+{
+    background: url("4.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.card2:hover .link
+{
+    background: url("4.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.link1
+{
+    height: 20px;
+    width: 20px;
+    width:1em;
+    height:1em;
+    background: url("4.png");
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    bottom:1em;
+    left:1em;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 3px;
+}
+
+
+.card1:hover .link1
+{
+    background: url("5.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card3:hover .link1
+{
+    background: url("5.jpg");
+    background-position: center;
+    background-size: cover;
 }
